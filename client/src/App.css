@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+}
+
+.product-card {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #eee;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.btn-dark {
+  border-radius: 10px;
+}
+
+h2 {
+  font-weight: bold;
+}
