@@ -1,12 +1,10 @@
 const Product = require("../models/Product");
 
-// Get All Products
 const getProducts = async (req, res) => {
   try {
     const products = await Product.find();
 
     res.json(products);
-
   } catch (error) {
     res.status(500).json({
       message: error.message,
@@ -14,7 +12,6 @@ const getProducts = async (req, res) => {
   }
 };
 
-// Create Product
 const createProduct = async (
   req,
   res
@@ -40,7 +37,6 @@ const createProduct = async (
       });
 
     res.status(201).json(product);
-
   } catch (error) {
     res.status(500).json({
       message: error.message,
@@ -48,7 +44,6 @@ const createProduct = async (
   }
 };
 
-// Update Product
 const updateProduct = async (
   req,
   res
@@ -94,7 +89,6 @@ const updateProduct = async (
       await product.save();
 
     res.json(updatedProduct);
-
   } catch (error) {
     res.status(500).json({
       message: error.message,
@@ -102,7 +96,6 @@ const updateProduct = async (
   }
 };
 
-// Delete Product
 const deleteProduct = async (
   req,
   res
@@ -128,7 +121,6 @@ const deleteProduct = async (
       message:
         "Product deleted successfully",
     });
-
   } catch (error) {
     res.status(500).json({
       message: error.message,
